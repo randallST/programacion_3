@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>clase 5</title>
+	<script type="text/javascript" src="clase5.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function Persona(nombre, edad) {
+  this.nombre = nombre;
+  this.edad = edad;
+}
+
+// Agregar un método al prototipo de la clase "Persona"
+Persona.prototype.saludar = function() {
+  document.write(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
+};
+
+// Creación de objetos utilizando la clase "Persona"
+let persona1 = new Persona('Juan', 25);
+let persona2 = new Persona('María', 30);
+
+// Llamada al método "saludar" de los objetos creados
+persona1.saludar(); // Salida: Hola, mi nombre es Juan y tengo 25 años.
+persona2.saludar();
+</script>
+
+
+
+<form>
+	<label>NUMERO 1</label>
+	<input type="number" name="num1" id="num1"> <br><br>
+
+	<label>NUMERO 2</label>
+	<input type="number" name="num2" id="num2"> <br><br>
+
+	<button onclick="multip()">CALCULAR</button>
+	
+
+</form>
+
+
+</body>
+</html>

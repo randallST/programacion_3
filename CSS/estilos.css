@@ -1,0 +1,64 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+
+#caja1 {
+	background-color: red;
+	width: 40%;
+	height: 250px;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.caja2{
+	background-color: green;
+	width: 30%;
+	height: 150px;
+	margin-top: 20px;
+	float: left;
+	margin: center;
+	margin-left: 230px;
+}
+
+h2,b{
+	font-size: 30px;
+	color: white;
+	margin-left: 23%;
+	padding-top: 90px;
+}
+
+#caja1 a[target="_blank"]{
+	color: white;
+	margin-left:20px ;
+	font-size: 30px;
+}
+
+#caja1:hover{
+	background-color: yellow;
+}
+
+
+#contenido::before{
+	content: "Titulo1: ";
+	font-style: italic;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 800px){
+	#caja1{
+		background-color: blue;
+		min-width:450px;
+	}
+
+	.caja2{
+		background-color: coral;
+		min-width:450px;
+	}
+}
+
+
+
+
